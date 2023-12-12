@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--dark-grayish-blue);
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .advice-id {
+    color: var(--neon-green);
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.container .advice-quote {
+    color: var(--light-cyan);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.advice-update {
+    border: none;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.advice-update:hover{
+    box-shadow: 0px 0px 15px var(--neon-green);
+}
+
+@media (max-width: 600px) {
+    body {
+      display: flex;
+      padding: 50px;
+    }
+  }
